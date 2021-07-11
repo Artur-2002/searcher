@@ -11,3 +11,8 @@ pip3 install flask-wtf
 pip3 install flask-sqlalchemy
 pip3 install flask-migrate
 ```
+Затем просто выполняем команду из каталога searcher:
+```
+flask run
+```
+Пользуйтесь)))
