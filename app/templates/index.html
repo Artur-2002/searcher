@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="POST">
+	{{form.text}}
+	<p>{{form.submit()}}</p>
+</form>
+<br>
+{% for document in documents %}
+<p>ID: {{document.id}}   текст документа: <a href="/text/{{document.id}}/">посмотреть</a>   рубрики: {{document.get_rubrics()}}   дата создания: {{document.created_date}}   <a href="/delete/{{document.id}}/">удалить</a></p>
+{% endfor %}
+{% endblock %}
